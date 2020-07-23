@@ -1,5 +1,6 @@
 package firstPracticalProject.model;
 
+import javafx.scene.control.Button;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -27,7 +28,7 @@ public class Author {
     @Column
     private String last_Name;
 
-   /* @ManyToOne
+    /* @ManyToOne
     @JoinColumn(name="departmentId")
     private Department department;*/
 

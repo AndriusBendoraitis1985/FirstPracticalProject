@@ -1,7 +1,6 @@
 package firstPracticalProject.services;
 
 import firstPracticalProject.model.Author;
-import javafx.collections.ObservableList;
 import org.hibernate.Session;
 
 import javax.persistence.Query;
@@ -21,7 +20,7 @@ public class AuthorRepository {
 
         Session session = SessionManager.getSessionFactory().openSession();
         Query selectAllAuthorsQuery = session.createQuery(getAllAuthorsHQLQuery);
-        List <Author> authorList = selectAllAuthorsQuery.getResultList();
+        List<Author> authorList = selectAllAuthorsQuery.getResultList();
         session.close();
 
         return authorList;
